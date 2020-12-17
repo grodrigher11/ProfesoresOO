@@ -1,10 +1,9 @@
 <?php
-class Foo {
+class Profesor {
     public $nombre;
     public $apellifo;
     public $numeroSeguirdadSocial;
    
-
 }
 
 ?>
