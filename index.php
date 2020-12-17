@@ -7,4 +7,5 @@ $marta = new Profesor("Marta","Perez","asdf");
 $marta->mostrar();
 
 include "vistas/pie.php";
+
 ?>

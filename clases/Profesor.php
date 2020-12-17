@@ -35,6 +35,10 @@ class Profesor {
         return $this->numeroSeguirdadSocial;
     }
 
+    function ingreso(){
+        
+    }
+
     function mostrar(){        
         echo "Esta enplead@ ". $this->getNombre() ." ". $this->getApellido()." con el NSS: " . $this->getNumeroSeguirdadSocial();
     }
