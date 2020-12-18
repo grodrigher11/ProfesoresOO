@@ -1,6 +1,4 @@
 <?php
-include "Profesor.php";
-
 class ProfesorPlantilla extends Profesor{
     private $sueldo;
     private $dietas;
@@ -30,12 +28,11 @@ class ProfesorPlantilla extends Profesor{
 
     public function mostrar(){   
         echo parent::mostrar();     
-        echo "<br>Los ingresos ".$this->ingresos();
+        echo "<br>Los ingresos ".$this->ingreso();
     }
 
-    public function ingresos(){
+    public function ingreso(){
         return $this->getDietas() + $this->getSueldo();
     }
-
 }
 ?>
