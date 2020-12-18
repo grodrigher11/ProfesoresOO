@@ -1,47 +1,47 @@
 <?php
+
 class Profesor {
     private $nombre;
     private $apellido;
     private $numeroSeguirdadSocial;
    
 
-    function __construct($nombre, $apellido, $numeroSeguirdadSocial){
+    public function __construct($nombre, $apellido, $numeroSeguirdadSocial){
         $this->nombre = $nombre;
         $this->apellido = $apellido;
         $this->numeroSeguirdadSocial = $numeroSeguirdadSocial;
     }
 
-    function setNombre($nombre){
+    public function setNombre($nombre){
         $this->$nombre = $nombre;
     }
     
-    function setApellido($apellido){
+    public function setApellido($apellido){
         $this->$apellido = $apellido;
     }
 
-    function setNumeroSeguirdadSocial($numeroSeguirdadSocial){
+    public function setNumeroSeguirdadSocial($numeroSeguirdadSocial){
         $this->$numeroSeguirdadSocial = $numeroSeguirdadSocial;
     }
 
-    function getNombre(){
+    public function getNombre(){
         return $this->nombre;
     }
 
-    function getApellido(){
+    public function getApellido(){
         return $this->apellido;
     }
 
-    function getNumeroSeguirdadSocial(){
+    public function getNumeroSeguirdadSocial(){
         return $this->numeroSeguirdadSocial;
     }
 
-    function ingreso(){
+    public function ingreso(){
         
     }
 
-    function mostrar(){        
+    public function mostrar(){        
         echo "Esta enplead@ ". $this->getNombre() ." ". $this->getApellido()." con el NSS: " . $this->getNumeroSeguirdadSocial();
     }
 }
-
 ?>

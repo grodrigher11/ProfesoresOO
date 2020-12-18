@@ -1,8 +1,9 @@
 <?php
-include "clases/Profesor.php";
+//include "clases/Profesor.php";
+include "clases/ProfesorPlantilla.php";
 include "vistas/cabecera.php";
 
-$marta = new Profesor("Marta","Perez","asdf");
+$marta = new ProfesorPlantilla("Marta","Perez","asdf","12","20");
 
 $marta->mostrar();
 
