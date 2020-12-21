@@ -1,6 +1,6 @@
 <?php
 
-class Profesor {
+abstract class Profesor {
     private $nombre;
     private $apellido;
     private $numeroSeguirdadSocial;
@@ -36,12 +36,10 @@ class Profesor {
         return $this->numeroSeguirdadSocial;
     }
 
-    public function ingreso(){
-        
-    }
+    abstract function ingreso();
 
     public function mostrar(){        
-        echo "Esta enplead@ ". $this->getNombre() ." ". $this->getApellido()." con el NSS: " . $this->getNumeroSeguirdadSocial();
+        echo "Está enplead@ ". $this->getNombre() ." ". $this->getApellido()." con el NSS: " . $this->getNumeroSeguirdadSocial();
     }
 }
 ?>

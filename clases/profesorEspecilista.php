@@ -1,6 +1,4 @@
 <?php
-include "Profesor.php";
-
 class profesorExpecialista extends Profesor{
     private $horas;
     private $tarifa;
@@ -42,7 +40,7 @@ class profesorExpecialista extends Profesor{
         $this->tarifa = $tarifa;
     }
 
-    public function ingresos()
+    public function ingreso()
     {
         return $this->getBase() + $this->getHoras() * $this->getTarifa();
     }
@@ -50,7 +48,7 @@ class profesorExpecialista extends Profesor{
     public function mostrar()
     {
         parent::mostrar();
-        echo "<br>Los ingresos ". $this->ingresos();
+        echo "<br>Los ingresos ". $this->ingreso();
     }
 }
 
