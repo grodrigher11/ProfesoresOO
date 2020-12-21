@@ -39,7 +39,7 @@ abstract class Profesor {
     abstract function ingreso();
 
     public function mostrar(){        
-        echo "Esta enplead@ ". $this->getNombre() ." ". $this->getApellido()." con el NSS: " . $this->getNumeroSeguirdadSocial();
+        echo "Está enplead@ ". $this->getNombre() ." ". $this->getApellido()." con el NSS: " . $this->getNumeroSeguirdadSocial();
     }
 }
 ?>
